@@ -1,8 +1,9 @@
 var arg = 0;
 
 
-function increment() {
-    arg++;
+function increment(e) {
+    e.preventDefault()
+    arg+1;
     document.getElementById('a').innerText = arg + "kg";
 }
 function decrement() {
